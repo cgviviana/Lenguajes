@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso HTML - Aprendiendo con LaProfeVivy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url('fondox.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #2c3e50;
+    }
+    .header {
+      background-color: #0f2f76;
+      color: white;
+      text-align: center;
+      padding: 30px 20px 40px 20px;
+    }
+    .header h1, .header h2 {
+      margin: 0;
+    }
+    .header h2 {
+      font-weight: normal;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 25px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    details {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    summary {
+      font-weight: bold;
+      font-size: 18px;
+      color: #4a148c;
+      cursor: pointer;
+    }
+    .contenido {
+      margin-top: 10px;
+    }
+    code {
+      font-weight: bold;
+      background-color: #f8f9fa;
+      padding: 2px 6px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 4px 0;
+    }
+    .separator {
+      border: 0;
+      height: 2px;
+      background-image: linear-gradient(to right, #ba68c8, #fce4ec, #ba68c8);
+      margin: 10px 0;
+    }
+    .preview {
+      padding: 10px;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    .img-ejemplo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Aprendiendo con LaProfeVivy</h1>
+    <h2>Curso HTML</h2>
+  </div>
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Buscar una lección...">
+    <div id="accordion">
+  <details><summary>1. 	¿Qué es HTML?</summary>
+        <div class="contenido">
+        Es el lenguaje que se emplea para el desarrollo de páginas de internet, el cual esta constituido de elementos
+        que el navegador interpreta y las despliega en la pantalla de acuerdo a su objetivo. .
+          <br><br>
+          
+          <hr class="separator">
+          <div class="preview"> </div>
+        </div>
+      </details>
+
+         <details><summary>2. 	Estructura interna de una página HTML</summary>
+        <div class="contenido">
+          
+           <code>&lt;!DOCTYPE html&gt;</code> <br>
+           <code>&lt;html &gt;</code> <br>
+           <code>&lt;head &gt;</code> <br>
+           &nbsp;&nbsp;   <code>&lt;title &gt; Título de la página &lt;/title &gt</code>  <br>
+           &nbsp;&nbsp;   <code>&lt;meta charset="UTF-8" </code> <br>
+          <code>&lt;/head &gt;</code> <br>
+          <code>&lt;body &gt;</code> <br>
+          Cuerpo de la página
+          <code>&lt;/body &gt;</code> <br>
+          <code>&lt;/html &gt;</code> <br>
+
+          <br><br>
+          Ejemplo:
+          
+          <hr class="separator">
+          <div class="preview">Cuerpo de la página</div>
+        </div>
+      </details>
+         <details><summary>3. Salto de línea  (&lt;br&gt;)</summary>
+        <div class="contenido">
+          <code>&lt;br&gt;</code> Todo el texto que disponemos en el cuerpo de la página aparece en la misma línea,
+          un navegador no tiene en cuenta la tecla ENTER por lo que esta etiqueta, es para indicarle que queremos 
+          que continúe en la próxima línea .
+          <br><br>
+          Ejemplo:  
+          Estimado amigo,
+          <code>&lt;br&gt;</code> Solo quería saludarte.
+          
+          <hr class="separator">
+          <div class="preview">Estimado amigo, <br>
+          Solo quería saludarte.
+        </div>
+      </details>
+          <details><summary>4. Párrafo (&lt;p&gt;, &lt;/p&gt;)</summary>
+        <div class="contenido">
+          <code>&lt;p&gt;</code> y <code>&lt;p&gt;</code> Un párrafo es una oración o conjunto de oraciones referentes 
+          a un mismo tema. Todo lo que encerremos en estas etiquetas aparecerá separado por un espacio con respecto
+          al próximo párrafo..
+          <br><br>
+          Ejemplo:
+          <code>&lt;p&gt;La importancia de reconocer cada una de las etiquetas de html, permite que podamos
+           estructurar páginas organizadas y con un adecuado estilo.&lt;/p&gt;</code>
+           <code>&lt;p&gt; Pese a lo dicho anteriormente, se debe tener en cuenta que html por sí solo, no genera una 
+           página dinámica tiene que, por lo menos combinarse  el lenguaje CSS y Java Script para que sea funcional.&lt;/p&gt;</code>
+          <hr class="separator">
+          <div class="preview">
+          <p>La importancia de reconocer cada una de las etiquetas de html, permite que podamos
+           estructurar páginas organizadas y con un adecuado estilo.</p> 
+          <p>Pese a lo dicho anteriormente, se debe tener en cuenta que html por sí solo, no genera una 
+           página dinámica tiene que, por lo menos combinarse  el lenguaje CSS y Java Script para que sea funcional.</p> 
+        </div>
+      </details>
+
+        <details><summary>5. Títulos (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;)</summary>
+        <div class="contenido">
+          Pone el encabezamiento del texto en diferentes tamaños o posiciones según jerarquía. 
+          <br><br>
+          Ejemplo:
+          <code>&lt;h1&gt;Título 1 &lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Título 2 &lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Título 3 &lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Título 4 &lt;/h4&gt;</code>
+          <code>&lt;h5&gt;Título 5 &lt;/h5&gt;</code>
+          <code>&lt;h6&gt;Título 6 &lt;/h6&gt;</code>
+          <hr class="separator">
+          <div class="preview"><h1>Título 1</h1> <br>
+          <div class="preview"><h2>Título 2</h2> <br>
+          <div class="preview"><h3>Título 3</h3> <br>
+          <div class="preview"><h4>Título 4</h4> <br>
+          <div class="preview"><h5>Título 5</h5> <br>
+          <div class="preview"><h6>Título 6</h6> <br>
+        </div>
+      </details>
+
+     
+      <details><summary>6. Énfasis (&lt;strong&gt;, &lt;em&gt;)</summary>
+        <div class="contenido">
+          <code>&lt;strong&gt;</code> pone el texto en negrita. <code>&lt;em&gt;</code> lo pone en cursiva para destacar.
+          <br><br>
+          Ejemplo:
+          <code>&lt;strong&gt;Importante&lt;/strong&gt;</code>
+          <code>&lt;em&gt;Destacado&lt;/em&gt;</code>
+          <hr class="separator">
+          <div class="preview"><strong>Importante</strong> y <em>Destacado</em></div>
+        </div>
+      </details>
+
+      <details><summary>7. Enlace interno (&lt;a&gt;&lt;/a&gt;)</summary>
+        <div class="contenido">
+          Se usa para enlazar a otra página del mismo sitio web.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="pagina.html"&gt;Ir a otra página&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="#">Ir a otra página</a></div>
+        </div>
+      </details>
+
+      <details><summary>8. Enlace externo (&lt;a&gt;&lt;/a&gt;)</summary>
+        <div class="contenido">
+          Permite enlazar a sitios web de fuera del sitio.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="https://google.com">Google</a></div>
+        </div>
+      </details>
+
+      <details><summary>9. Imagen (&lt;img&gt;)</summary>
+        <div class="contenido">
+          Muestra una imagen usando el atributo <code>src</code> y texto alternativo con <code>alt</code>.
+          <br><br>
+          Ejemplo:
+          <code>&lt;img src="1.jpg" alt="Descripción"&gt;</code>
+          <hr class="separator">
+          <div class="preview"><img src="1.jpg" alt="Descripción" class="img-ejemplo"></div>
+        </div>
+      </details>
+
+      <details><summary>10. Imagen con enlace (&lt;a&gt;&lt;img&gt;&lt;/a&gt;)</summary>
+        <div class="contenido">
+          Puedes hacer clic sobre la imagen para ir a un enlace.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="https://google.com"&gt;&lt;img src="1.jpg"&gt;&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="https://google.com"><img src="1.jpg" class="img-ejemplo"></a></div>
+        </div>
+      </details>
+
+      <details><summary>11. Nueva pestaña (&lt;a target="_blank"&gt;)</summary>
+        <div class="contenido">
+          Para abrir el enlace en otra pestaña del navegador.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="https://google.com" target="_blank"&gt;Ir a Google&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="https://google.com" target="_blank">Ir a Google</a></div>
+        </div>
+      </details>
+
+      <details><summary>12. Correo (&lt;a href="mailto:"&gt;)</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
+
+      <details><summary>13. Ancla interna (&lt;a href="#seccion"&gt;)</summary>
+        <div class="contenido">
+          Te permite ir a una parte específica de la misma página.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="#final"&gt;Ir al final&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="#final">Ir al final</a></div>
+        </div>
+      </details>
+
+      <details><summary>14. Ancla externa (&lt;a href="pagina.html#parte"&gt;)</summary>
+        <div class="contenido">
+          Lleva a una parte específica en otra página.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="pagina.html#seccion"&gt;Ver sección&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="#">Ver sección</a></div>
+        </div>
+      </details>
+
+      <details><summary>15. Lista ordenada (&lt;ol&gt;&lt;/ol&gt;)</summary>
+        <div class="contenido">
+          Crea una lista numerada.
+          <br><br>
+          Ejemplo:
+          <code>&lt;ol&gt;&lt;li&gt;Uno&lt;/li&gt;&lt;li&gt;Dos&lt;/li&gt;&lt;/ol&gt;</code>
+          <hr class="separator">
+          <div class="preview">
+            <ol><li>Uno</li><li>Dos</li></ol>
+          </div>
+        </div>
+      </details>
+
+      <details><summary>16. Lista no ordenada (&lt;ul&gt;&lt;/ul&gt;)</summary>
+        <div class="contenido">
+          Crea una lista con viñetas.
+          <br><br>
+          Ejemplo:
+          <code>&lt;ul&gt;&lt;li&gt;Pan&lt;/li&gt;&lt;li&gt;Leche&lt;/li&gt;&lt;/ul&gt;</code>
+          <hr class="separator">
+          <div class="preview">
+            <ul><li>Pan</li><li>Leche</li></ul>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const accordion = document.getElementById("accordion");
+    searchInput.addEventListener("keyup", () => {
+      const filter = searchInput.value.toLowerCase();
+      const detailsList = accordion.querySelectorAll("details");
+      detailsList.forEach(details => {
+        const text = details.textContent.toLowerCase();
+        details.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
