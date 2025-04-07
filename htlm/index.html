@@ -308,7 +308,509 @@
           </div>
         </div>
       </details>
+ <details><summary>17. Lista de definiciones (&lt;dl&gt;&lt;/dl&gt;)</summary>
+        <div class="contenido">
+          Asociar un término y la definición del mismo. El navegador se encarga de destacar y separa el término y su definición.
+          <br><br>
+          Ejemplo:<br><br>
+          <code>&lt;dl&gt;<br>
+                   &nbsp &lt;dt&gt; Manzana &lt;/dt &gt;<br>
+                   &nbsp &lt;dd&gt; Fruta dulce roja o verde. &lt;/dd&gt;<br>
+                   &nbsp &lt;dt&gt; Perro &lt;/dt&gt;<br>
+                   &nbsp &lt;dd&gt; Animal que ladra y es el mejor amigo del ser humano. &lt;/dd&gt;<br>
+                 &lt;/dl&gt;<br>
 
+            </code>
+
+          <hr class="separator">
+          <div class="preview">
+            <dl>
+                <dt>Manzana</dt>
+                <dd>Fruta dulce roja o verde.</dd>
+           
+                <dt>Perro</dt>
+                <dd>Animal que ladra y es el mejor amigo del ser humano</dd>
+            </dl>
+          </div>
+        </div>
+      </details>
+
+    </div>
+<details><summary>18. Listas anidadas (&lt;dl&gt;&lt;/dl&gt;)</summary>
+        <div class="contenido">
+          Anidar listas dentro de otras  sin importar la clase.
+          <br><br>
+          Ejemplo:<br><br>
+          <code>&lt;ol&gt;<br>
+                          &nbsp &lt;li&gt;Estados Unidos<br>  
+                              &nbsp &nbsp &lt;ul&gt;<br> 
+                                             &nbsp &nbsp &nbsp &lt;li&gt;&lt;a href="https://www.nytimes.com/"&gt; The New York Times &lt;/a&gt;&lt;/li&gt<br>											                                     &nbsp &nbsp &nbsp &lt;li&gt;&lt;a href="https://nypost.com/"&gt; New York Post &lt;/a&gt;&lt;/li&gt <br>
+                                             &nbsp &nbsp &nbsp &lt;li&gt;&lt;a href="https://www.washingtonpost.com/"&gt; Washington Post &lt;/a&gt;&lt;/li&gt<br>
+                              &nbsp &nbsp &lt;/ul&gt;<br>
+                          &nbsp &lt;/li&gt;<br>
+                         
+                          
+                          &nbsp&lt;li&gt;Gran Bretaña <br>
+                              &nbsp &nbsp &lt;ul&gt;<br>
+                                              &nbsp &nbsp &nbsp &lt;li&gt;&lt;a href="https://www.theguardian.com/"&gt; The Guardian &lt;/a&gt;&lt;/li&gt<br>
+                                              &nbsp &nbsp &nbsp &lt;li&gt;&lt;a href="https://www.thesun.co.uk/"&gt; The Sun &lt;/a&gt;&lt;/li&gt;<br>
+                              &nbsp &nbsp &lt;/ul&gt;<br>
+                           &nbsp &lt;/li&gt;<br>
+               &lt;/ol&gt;             
+          </code>
+
+          <hr class="separator">
+          <div class="preview">
+          <ol>
+            <li> Estados Unidos  
+                 <ul> 
+                       <li>  <a href="https://www.nytimes.com/"> The New York Times </a> </li>
+                       <li>  <a href="https://nypost.com/"> New York Post </a> </li>
+                       <li>  <a href="https://www.washingtonpost.com/"> Washington Post </a> </li>
+                 </ul>
+            </li> 
+          
+           
+            <li> Gran Bretaña 
+                 <ul> 
+                       <li>  <a href="https://www.theguardian.com/"> The Guardian </a> </li>
+                       <li>  <a href="https://www.thesun.co.uk/"> The Sun </a> </li>
+                 </ul>
+                  
+            </li> 
+          </ol>
+
+
+          </div>
+        </div>
+      </details>
+      <details><summary>19. Tabla (&lt;table&gt;&lt;/table&gt;,&lt;tr&gt;&lt;/tr&gt;,&lt;td&gt;&lt;/td&gt;)</summary>
+        <div class="contenido">
+          Muestra una serie de datos en forma ordenada, organizado en filas (tr) y columnas (td).
+          <br><br>
+          Ejemplo:<br><br>
+          <code>
+          &lt;table border="1"&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                   &nbsp &nbsp &lt;td&gt;China&lt;/td&gt; <br> 
+                   &nbsp &nbsp &lt;td&gt;1300 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;India&lt;/td&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;1080 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp  &nbsp &lt;td&gt;Estados Unidos &lt;/td&gt; <br>
+                 &nbsp  &nbsp &lt;td&gt;295 millones&lt;/td&gt;<br>
+                  &nbsp &lt;/tr&gt;<br>
+         &lt;/table&gt; <br>
+        </code>
+
+         <hr class="separator">
+          <div class="preview">
+            <table border="1"> 
+                 <tr> 
+                   <td>China</td><td>1300 millones</td>
+                 </tr>
+                 <tr>
+                   <td>India</td><td>1080 millones</td>
+                 </tr>
+                 <tr>
+                   <td>Estados Unidos</td><td>295 millones</td>
+                 </tr>
+         </table>  
+        </div>
+      </details>
+
+      <details><summary>20. Tabla con encabezado (&lt;th&gt; &lt;/th&gt;)</summary>
+        <div class="contenido">
+          Es colocar título a la tabla como encabezado de cada columna por lo que se reemplaza  el primer (td) por un (th).
+          <br><br>
+          Ejemplo:
+
+          <br><br>
+          <code>
+          &lt;table border="1"&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                   &nbsp &nbsp &lt;th&gt;Países&lt;/th&gt; <br> 
+                   &nbsp &nbsp &lt;th&gt;Cantidad de habitantes&lt;/th&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+
+                 &nbsp &lt;tr&gt;<br>
+                   &nbsp &nbsp &lt;td&gt;China&lt;/td&gt; <br> 
+                   &nbsp &nbsp &lt;td&gt;1300 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;India&lt;/td&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;1080 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp  &nbsp &lt;td&gt;Estados Unidos &lt;/td&gt; <br>
+                 &nbsp  &nbsp &lt;td&gt;295 millones&lt;/td&gt;<br>
+                  &nbsp &lt;/tr&gt;<br>
+         &lt;/table&gt; <br>
+        </code>
+
+          <hr class="separator">
+          <div class="preview">
+           <table border="1"> 
+                 <tr> 
+                   <th>Países</th><th>Cantidad de habitantes</th>
+                 </tr>
+                 <tr>
+
+                 <tr> 
+                   <td>China</td><td>1300 millones</td>
+                 </tr>
+                 <tr>
+                   <td>India</td><td>1080 millones</td>
+                 </tr>
+                 <tr>
+                   <td>Estados Unidos</td><td>295 millones</td>
+                 </tr>
+         </table>  
+
+        </div>
+        </div>
+      </details>
+      <details><summary>21. Tabla con título (&lt;caption&gt;&lt;/caption&gt;)</summary>
+        <div class="contenido">
+          Permite colocarle título o nombre a la propia tabla.
+          <br><br>
+          Ejemplo:
+                    <br><br>
+          <code>
+          &lt;table border="1"&gt;<br>
+             &nbsp &lt;caption&gt;Población de los paises con mayor cantidad de habitantes.&lt;/caption&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                   &nbsp &nbsp &lt;th&gt;Países&lt;/th&gt; <br> 
+                   &nbsp &nbsp &lt;th&gt;Cantidad de habitantes&lt;/th&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+
+                 &nbsp &lt;tr&gt;<br>
+                   &nbsp &nbsp &lt;td&gt;China&lt;/td&gt; <br> 
+                   &nbsp &nbsp &lt;td&gt;1300 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;India&lt;/td&gt;<br>
+                 &nbsp &nbsp  &lt;td&gt;1080 millones&lt;/td&gt;<br>
+                 &nbsp &lt;/tr&gt;<br>
+                 &nbsp &lt;tr&gt;<br>
+                 &nbsp  &nbsp &lt;td&gt;Estados Unidos &lt;/td&gt; <br>
+                 &nbsp  &nbsp &lt;td&gt;295 millones&lt;/td&gt;<br>
+                  &nbsp &lt;/tr&gt;<br>
+         &lt;/table&gt; <br>
+        </code>
+
+          <hr class="separator">
+          <div class="preview">
+           <table border="1"> 
+            <caption>Población de los paises con mayor cantidad de habitantes.</caption>
+                 <tr> 
+                   <th>Países</th><th>Cantidad de habitantes</th>
+                 </tr>
+                 <tr>
+
+                 <tr> 
+                   <td>China</td><td>1300 millones</td>
+                 </tr>
+                 <tr>
+                   <td>India</td><td>1080 millones</td>
+                 </tr>
+                 <tr>
+                   <td>Estados Unidos</td><td>295 millones</td>
+                 </tr>
+         </table>  
+
+        </div>
+        </div> 
+        </details> 
+        <details><summary>22. Tabla y combinación de celdas </summary>
+        <div class="contenido">
+          Permite que una celda ocupe el lugar de dos o más celdas en forma horizonzal o vertical, para estos casos el
+          elemento td o th dispone de dos propiedades llamadas rowspan (fila) y colspan (columna).}.
+          <br><br>
+          Ejemplo:
+                    <br><br>
+          <code>
+           &lt;table border="1"&gt;<br>
+               &nbsp &lt;tr&gt; <br>
+                  &nbsp &nbsp &nbsp&lt;td rowspan="4"&gt;Recursos&lt;/td&gt; &lt;td colspan="4"&gt;Facturación de los últimos tres meses&lt;/td&gt;
+               <br>
+             &nbsp &lt;/tr&gt;<br>
+               &nbsp &lt;tr&gt;<br>
+               &nbsp &nbsp   &lt;td&gt;Discos Duros&lt;/td&gt; &lt;td>23000&lt;/td&gt; &lt;td&gt;27200&lt;/td&gt; &lt;td&gt;26000&lt;/td&gt;
+               <br>
+&nbsp &lt;/tr&gt;<br>
+               &nbsp &lt;tr&gt;<br>
+                 &nbsp&nbsp&nbsp   &lt;td&gt;CPU&lt;/td&gt;         &lt;td&gt;73000 &lt;/td&gt;  &lt;td&gt;67300&lt;/td&gt; &lt;td&gt;51000&nbsp&lt;/td&gt;<br>
+               &nbsp &lt;/tr&gt;
+              <br>
+ &nbsp &lt;tr&gt;
+                   &lt;td>Monitores&lt;/td&gt;   &lt;td&gt;53000&lt;/td&gt;  &lt;td&gt;72000&lt;/td&gt;  &lt;td&gt;88000&lt;/td&gt;
+              <br>&nbsp  &lt;/tr&gt;<br>
+            &lt;/table&gt; 
+        </code>
+
+          <hr class="separator">
+          <div class="preview">
+          <table border="1">
+               <tr>
+                  <td rowspan="4">Recursos</td><td colspan="4">Facturación de los últimos tres meses</td>
+               </tr>
+               <tr>
+                  <td>Discos Duros</td> <td>23000</td> <td>27200</td> <td>26000</td>
+               </tr>
+               <tr>
+                   <td>CPU</td>         <td>73000</td>  <td>67300</td> <td>51000</td>
+               </tr>
+               <tr>
+                   <td>Monitores</td>   <td>53000</td>  <td>72000</td>  <td>88000</td>
+               </tr>
+            </table> 
+
+        </div>
+        </div>
+      </details>
+      
+       <details><summary>23. Contenido de la cabecera de la página (&lt;title&gt;, &lt;/title&gt;)</summary>
+        <div class="contenido">
+        Es una etiqueta que sirve para ponerle nombre a la página, y ese nombre aparece en la parte de arriba del navegador,
+        donde están las pestañas, no dentro del cuerpo de la página
+        <br><br>
+        Ejemplo: <br><br> 
+        
+        <code>
+        
+        &lt;!DOCTYPE html&gt;<br>
+        &nbsp &lt;html&gt;<br>
+        &nbsp &nbsp &lt;head&gt;<br>
+        &nbsp &nbsp &nbsp &lt;title&gt; Juego Trivia &lt;/title&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta charset="UTF-8"&gt;<br>
+        &nbsp &nbsp &lt;/head&gt;<br>
+        &nbsp &nbsp &lt;body&gt;
+        <br><br>
+        &nbsp &nbsp &lt;/body&gt;<br>
+        &nbsp &lt;/html&gt;<br>
+
+        </code>
+
+        <hr class="separator">
+        <div class="preview">
+        <img src="0.jpg" alt="Descripción">
+       </div>
+
+        </div>
+       
+      </details>
+     
+
+      <details><summary>24. Contenido de la cabecera de la página (&lt;meta &gt;)</summary>
+        <div class="contenido">
+        Se usa para dar información sobre tu página, pero no se muestra en la pantalla, solo los navegadores y los 
+        buscadores pueden ver.
+        <ul>
+         <li> &lt;meta charset="UTF-8"&gt;Le dice al navegador qué letras y símbolos puede usar la página. </li>
+         <li>&lt;meta name="keywords" content="Temas" &gt; Palabras clave para que los buscadores sepan tema de la página. </li>
+         <li>&lt;meta name="description" content="Descripción"&gtEs una mini-descripción que aparece en el buscador cuando alguien busca la página.</li>
+         <li>&lt;meta name="author" content="Autor de la página"&gt  Dice quién hizo la página.</li>
+         <li>&lt;meta name="copyright" content="Dueño de la página"&gt Dice quién es el dueño de los derechos de la página.</li>
+        </ul> 
+          
+        Ejemplo: <br><br> 
+        
+        <code>
+        
+        
+        &nbsp &nbsp &lt;head&gt;<br>
+        &nbsp &nbsp &nbsp &lt;title&gt; Juego Trivia &lt;/title&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta charset="UTF-8"&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta name="keywords" content="html, programación, Tutorial"&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta name="description" content="Aprendiendo html"&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta name="author" content="La Profe Vivy"&gt;<br>
+        &nbsp &nbsp &nbsp &lt;meta name="copyright" content="Viviana R. T."&gt;<br>
+
+
+        &nbsp &nbsp &lt;/head&gt;<br>
+      
+
+        </code>
+ 
+          <hr class="separator">
+          <div class="preview">
+         
+         </div>
+        </div>
+       
+      </details>
+
+       <details><summary>25. Comentarios dentro de una página &lt;!-- --&gt;</summary>
+        <div class="contenido">
+        Comentario es un texto que se escribe en el código pero no es código, es como un mensaje recordatorio o explicativo que no interfiere la programación
+        ni se muestra en la página web.
+     
+          <br><br>
+          Ejemplo <br><br>
+          &lt;!-- Este es un comentario de una línea--&gt;<br>
+          &lt;!-- Este es un comentario de <br>
+                  &nbsp &nbsp &nbsp &nbsp varias <br>
+                  &nbsp &nbsp &nbsp &nbsp líneas--&gt; <br>
+
+          <hr class="separator">
+          <div class="preview"> </div>
+         
+
+        </div>
+      </details>
+
+       <details><summary>26. Sintaxis para caracteres especiales</summary>
+        <div class="contenido">
+        Hay algunos símbolos como <, > o & que HTML usa para su propio lenguaje, por eso no se pueden escribir directamente en 
+        una página web o el navegador se confunde, por lo que se usa códigos especiales llamados <b> entidades HTML</b>, cuya estructura es:
+         <b>&(nombre);</b> .
+        <br><br>
+        <table border="1" align="center"> 
+                 <tr> 
+                   <th>Caracter</th> <th>Nombre </th><th>Entidad</th>
+                 </tr>
+              
+                 <tr align="center" align="center"> 
+                   <td>< </td> <td> Menor que </td>  <td> &amp;lt;</td>
+                 </tr>
+                 <tr align="center">
+                    <td>> </td> <td> Mayor que </td>  <td> &amp;gt;</td>
+                 </tr>
+                 <tr align="center">
+                   <td> & </td> <td> Ampersand</td><td> &amp;amp;</td>
+                 </tr>
+                  <tr align="center">
+                   <td> ©  </td> <td> Derechos de autor</td><td> &amp;copy;</td>
+                 </tr>
+                 <tr align="center">
+                   <td>  </td> <td> espacio en blanco</td><td> &amp;nbsp</td>
+                 </tr>
+                 <tr align="center">
+                   <td> "  </td> <td> Comillas dobles</td><td> &amp;quot;</td>
+                 </tr>
+                  <tr align="center">
+                   <td> '  </td> <td> Apóstrofo</td><td> &amp;apos;</td>
+                 </tr>
+         </table>  
+
+        <br><br> Ejemplo <br><br>
+     &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+  &nbsp&nbsp &lt;head&gt;<br>
+    &nbsp &nbsp &nbsp &nbsp &lt;title&gt;Título de la página&lt;/title&gt;<br>
+     &nbsp &nbsp &nbsp &nbsp &lt;meta charset="UTF-8"&gt;<br>
+  &nbsp &nbsp &lt;/head&gt;<br>
+  &nbsp &nbsp &lt;body&gt;<br>
+   &nbsp&nbsp &nbsp  &nbsp &lt;h1&gt;  10+x*y <b> &lt; </b> 12*z &lt;/h1&gt; <br>
+  &nbsp &nbsp &lt;/body&gt;<br>
+&lt;/html&gt;    <br>
+          <hr class="separator">
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Título de la página</title>
+     <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>
+      10+x*y &lt; 12*z
+    </h1> 
+  </body>
+</html>
+          <div class="preview"> </div>
+        </div>
+      </details>
+
+      <details><summary>27. Formulario (&lt; form &gt;&lt;/form &gt;)</summary>
+        <div class="contenido">
+          Formato para registrar datos dentro de una página web y enviar.
+          <br><br>
+          Ejemplo: <br><br>
+
+        
+&lt;!DOCTYPE html&gt; <br>
+&lt;html>&gt;<br>
+ &nbsp &nbsp &lt;head &gt;<br>
+ &nbsp &nbsp &nbsp &nbsp &lt;title>Prueba de formulario&lt;/title>&gt;<br>
+ &nbsp &nbsp &nbsp &nbsp &lt;meta charset="UTF-8"&gt;<br>
+ &nbsp &nbsp  &lt;/head&gt;<br>
+ &nbsp &nbsp  &lt;body&gt;<br>
+&nbsp &nbsp   &lt;form action="registrardatos.php" method="post"&gt;<br>
+  &nbsp &nbsp &nbsp &nbsp Ingrese su nombre:<br>
+  &nbsp &nbsp  &nbsp &nbsp &lt;input type="text" name="nombre" size="20"&gt;<br>
+  &nbsp &nbsp &nbsp &nbsp  &lt;input type="submit" value="enviar"&gt;<br>
+&nbsp &nbsp &lt;/form&gt;<br>
+&nbsp &nbsp   &lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+
+          <hr class="separator">
+          <code>
+          <form action="registradatos.php" method="post">
+           Ingrese su nombre:
+           <input type="text" name="nombre" size="20">
+           <br>
+           <input type="submit" value="enviar">
+           </form></code>
+
+         
+        </div>
+      </details>
+      <details><summary>28. Formulario - input type="text"/ input type="password"</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
+
+      <details><summary>29. Formulario - textarea</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
+      <details><summary>30. Formulario - input type="checkbox"</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
+      <details><summary>31. Formulario - input type="radio"</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
+      <details><summary>32. Formulario - select (cuadro de selección individual)</summary>
+        <div class="contenido">
+          Crea un botón para enviar un correo electrónico.
+          <br><br>
+          Ejemplo:
+          <code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code>
+          <hr class="separator">
+          <div class="preview"><a href="mailto:correo@ejemplo.com">Enviar correo</a></div>
+        </div>
+      </details>
     </div>
   </div>
   <script>
